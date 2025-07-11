@@ -1,0 +1,43 @@
+# CodeIgniter .gitignore
+
+# Application cache
+CodeIgniter-3.1.13/application/cache/*
+!CodeIgniter-3.1.13/application/cache/index.html
+
+# Application logs
+CodeIgniter-3.1.13/application/logs/*
+!CodeIgniter-3.1.13/application/logs/index.html
+
+# Configuration files with sensitive data
+CodeIgniter-3.1.13/application/config/database.php
+CodeIgniter-3.1.13/application/config/config.php
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+backup_ci3/
+
+# Migration files
+migration_examples/
+install_git.ps1 
