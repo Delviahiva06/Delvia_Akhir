@@ -128,7 +128,7 @@ INSERT INTO tb_barang (nama, harga) VALUES
 ('Kamar Mandi Dalam', 100000);
 
 -- Index untuk optimasi query
-CREATE INDEX idx_penghuni_aktif ON tb_penghuni(tgl_keluar) WHERE tgl_keluar IS NULL;
+CREATE INDEX idx_penghuni_tgl_keluar ON tb_penghuni(tgl_keluar);
 CREATE INDEX idx_kamar_status ON tb_kamar(status);
 CREATE INDEX idx_kmr_penghuni_aktif ON tb_kmr_penghuni(status, tgl_keluar);
 CREATE INDEX idx_tagihan_status ON tb_tagihan(status, bulan, tahun);
